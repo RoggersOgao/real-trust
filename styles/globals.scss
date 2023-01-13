@@ -1,0 +1,52 @@
+
+$primary-blue:#008cff;
+$orange: #ff9100;
+$titleGrey:#828282;
+$border:rgba(78, 78, 78, 0.397);
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    font-size:10px;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Spline Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -webkit-font-feature-settings: "c2cs";
+    color:rgb(27, 27, 27);
+    max-width:1351px;
+    margin:0 auto;
+    overflow-x: hidden;
+}
+	
+
+@mixin respond ($breakpoint){
+	
+  @if $breakpoint == phone{
+      @media only screen and (max-width:600px){
+          @content
+      }
+  }
+  @if $breakpoint == tab-port{
+      @media only screen and (max-width:900px){
+          @content
+      }
+  }
+  @if $breakpoint == tab-land{
+      @media only screen and (max-width:1200px){
+          @content
+      }
+  }
+  @if $breakpoint == big-desktop{
+      @media only screen and (max-width:1800px){
+          @content
+      }
+  }
+}
+

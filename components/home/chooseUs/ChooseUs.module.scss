@@ -1,0 +1,114 @@
+.usCont{
+    width: 80%;
+    margin:0 auto;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+    &__title{
+        font-size:2.6rem;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+    }
+
+    &__el1{
+        scroll-snap-align: center center;
+        margin-top: -5rem;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            flex:1;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &__img{
+                position: relative;
+                
+                .img{
+                    height: 400px;
+                    object-fit: contain;
+
+                }
+            }
+            &__background{
+                position: absolute;
+                top:12%;
+                right:10%;
+                height: 400px;
+                background-color: rgb(24, 24, 53);
+                width:260px;
+                z-index: -1;
+            }
+        }
+        .right{
+            flex:1;
+            &__title{
+                span{
+
+                }
+                .title{
+
+                }
+            }
+
+            &__desc{
+
+            }
+        }
+    }
+    &__el2{
+        .left{
+            &__img{
+                .img{
+
+                }
+            }
+            &__background{
+
+            }
+        }
+        .right{
+            &__title{
+                span{
+
+                }
+                .title{
+
+                }
+            }
+
+            &__desc{
+                
+            }
+        }
+    }
+    &__el3{
+        .left{
+            &__img{
+                .img{
+
+                }
+            }
+            &__background{
+
+            }
+        }
+        .right{
+            &__title{
+                span{
+
+                }
+                .title{
+
+                }
+            }
+
+            &__desc{
+                
+            }
+        }
+    }
+}
